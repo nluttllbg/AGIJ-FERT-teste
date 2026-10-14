@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>AGIJ VERT - Consultoria no Agronegócio | Manejo de Precisão e Solos</title>
+  <meta name="description" content="Consultoria agronômica especializada em recuperação de solos, diagnóstico de fertilidade profunda e aumento de sacas por hectare com rigor científico e independência técnica." />
+  <meta property="og:title" content="AGIJ VERT - Consultoria no Agronegócio" />
+  <meta property="og:description" content="Transformamos solos e destravamos o verdadeiro potencial produtivo da sua fazenda com diagnóstico de precisão." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    /* Smooth transitions for interactive elements */
+    .nav-transition {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes pulseFocus {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(0, 54, 31, 0.4); }
+      50% { box-shadow: 0 0 0 12px rgba(0, 54, 31, 0); }
+    }
+    .form-pulse-highlight {
+      animation: pulseFocus 1.2s ease-out 2;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-container": "#785840",
+            "outline-variant": "#c0c9c0",
+            "secondary-container": "#fdd2b2",
+            "on-error": "#ffffff",
+            "tertiary": "#3f2a00",
+            "inverse-primary": "#9dd3b0",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed": "#271900",
+            "secondary-fixed": "#ffdcc3",
+            "primary-fixed": "#b9efcb",
+            "on-background": "#161d19",
+            "surface-tint": "#36684c",
+            "on-tertiary-fixed-variant": "#5e4100",
+            "on-primary-fixed-variant": "#1d5036",
+            "surface-dim": "#d4dcd5",
+            "inverse-surface": "#2a322e",
+            "surface-container-high": "#e2eae3",
+            "surface-container": "#e8f0e9",
+            "on-secondary-fixed-variant": "#5e402a",
+            "on-secondary": "#ffffff",
+            "secondary": "#78583f",
+            "primary-fixed-dim": "#9dd3b0",
+            "on-primary-container": "#89bd9c",
+            "surface-container-highest": "#dce5de",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#f2be5f",
+            "surface-container-low": "#edf6ee",
+            "primary-container": "#1a4d33",
+            "surface": "#f3fbf4",
+            "on-tertiary": "#ffffff",
+            "primary": "#00361f",
+            "tertiary-fixed": "#ffdea9",
+            "background": "#f3fbf4",
+            "on-primary": "#ffffff",
+            "on-surface": "#161d19",
+            "tertiary-container": "#5b3f00",
+            "outline": "#717972",
+            "secondary-fixed-dim": "#e8bea0",
+            "on-surface-variant": "#414942",
+            "surface-bright": "#f3fbf4",
+            "on-secondary-fixed": "#2c1604",
+            "inverse-on-surface": "#ebf3ec",
+            "on-primary-fixed": "#002111",
+            "on-error-container": "#93000a",
+            "surface-variant": "#dce5de",
+            "on-tertiary-container": "#dba94d"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "gutter-mobile": "1rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-xl": ["Newsreader"],
+            "headline-md": ["Newsreader"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Newsreader"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "data-mono": ["JetBrains Mono"],
+            "headline-lg": ["Newsreader"],
+            "headline-xl-mobile": ["Newsreader"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed-dim selection:text-primary">
+
+  <!-- CABEÇALHO FIXO -->
+  <header id="main-header" class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,56,38,0.05)] transition-all duration-300">
+    <!-- Barra Superior de Credenciais (Desktop) -->
+    <div class="bg-primary-container text-on-primary-container px-margin py-space-xs hidden md:block border-b border-primary/20">
+      <div class="max-w-7xl mx-auto flex items-center justify-between font-label-md text-label-md">
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">verified</span>
+          <span>Atendimento especializado em todo o Brasil | Diagnóstico de Precisão para Fazendas e Produtores</span>
+        </div>
+        <div class="flex items-center gap-space-md font-data-mono text-data-mono text-primary-fixed-dim">
+          <span>CREA/CONFEA CERTIFICADO</span>
+          <span>AGRONOMIA AVANÇADA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Principal de Navegação -->
+    <div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between">
+      <!-- Identidade Visual / Logo -->
+      <a href="#inicio" class="flex items-center gap-space-md group cursor-pointer focus:outline-none" aria-label="AGIJ VERT - Página Inicial">
+        <img alt="Logo AGIJ VERT" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UCYaLz2IokFi37e4GOf5pyQUHQwdT7cHbh_6F7vnIfC8lR5dhsYx-4LXDGhqlug1Ufr0ydFFbrfNtrEtIP-N1QDrCaDNbPGSr8q0FbmBBWeyu5iFKT9oTy8RWOBJ-pBSkYXYOm4dzO1WLKxOImqf0fG1piG-K8rossJVln1lMyYFdAs4f19SizEUInbyWA8315SP1ZNXKTx1KsTDkHIDZz0OPPBgSLNkwmycLxOAv2BOAfv6-Eu7a2_sgA"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary tracking-tight">AGIJ VERT</span>
+          <span class="font-label-md text-label-md text-on-surface-variant font-medium tracking-wide uppercase">Consultoria Agronômica</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav id="desktop-nav" class="hidden lg:flex items-center gap-space-xs p-1.5 bg-surface-container-low rounded-xl border border-outline-variant/30" aria-label="Navegação Principal">
+        <a class="nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg nav-transition hover:text-primary hover:bg-surface-container" data-section="inicio" href="#inicio">Início</a>
+        <a class="nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg nav-transition hover:text-primary hover:bg-surface-container" data-section="sobre-nos" href="#sobre-nos">Sobre Nós</a>
+        <a class="nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg nav-transition hover:text-primary hover:bg-surface-container" data-section="solucoes" href="#solucoes">Soluções</a>
+        <a class="nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg nav-transition hover:text-primary hover:bg-surface-container" data-section="casos-de-sucesso" href="#casos-de-sucesso">Casos de Sucesso</a>
+        <a class="nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg nav-transition hover:text-primary hover:bg-surface-container" data-section="contato" href="#diagnostico-formulario">Contato</a>
+      </nav>
+
+      <!-- Ações do Cabeçalho & Botão Mobile -->
+      <div class="flex items-center gap-space-sm sm:gap-space-md">
+        <!-- CTA Principal no Topo -->
+        <a class="cta-lead-btn hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg shadow-sm hover:bg-primary hover:shadow-md transition-all duration-200 cursor-pointer" href="#diagnostico-formulario">
+          <span>Solicite uma Análise Técnica</span>
+        </a>
+
+        <!-- Botão WhatsApp Ágil no Header (Mobile/Tablet) -->
+        <a class="sm:hidden p-2 rounded-lg bg-surface-container text-primary hover:bg-primary-container hover:text-on-primary transition-colors" href="https://wa.me/5562998765432" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Agronômico">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+        </a>
+
+        <!-- Botão de Hambúrguer Mobile -->
+        <button id="mobile-menu-toggle" type="button" class="lg:hidden p-2.5 rounded-lg text-primary bg-surface-container-low hover:bg-surface-container border border-outline-variant/30 focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer transition-colors" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-menu-drawer">
+          <span id="mobile-menu-icon" class="material-symbols-outlined text-[24px] block">menu</span>
+        </button>
+
+        <!-- Indicador de Agrônomo / Acesso Restrito -->
+        <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-xs cursor-default" title="Portal do Produtor / Área Técnica">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gaveta de Navegação Mobile (Gaveta Responsiva) -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-outline-variant/30 bg-surface/98 backdrop-blur-2xl shadow-xl transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-margin py-space-md flex flex-col gap-space-xs">
+        <a class="mobile-nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-colors flex items-center justify-between" data-section="inicio" href="#inicio">
+          <span>Início</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-colors flex items-center justify-between" data-section="sobre-nos" href="#sobre-nos">
+          <span>Sobre Nós</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-colors flex items-center justify-between" data-section="solucoes" href="#solucoes">
+          <span>Soluções Agronômicas</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-colors flex items-center justify-between" data-section="casos-de-sucesso" href="#casos-de-sucesso">
+          <span>Casos de Sucesso</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+        </a>
+        <a class="mobile-nav-link px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-primary transition-colors flex items-center justify-between" data-section="contato" href="#diagnostico-formulario">
+          <span>Contato e Diagnóstico</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+        </a>
+
+        <!-- Ação Rápida no Mobile -->
+        <div class="pt-space-sm mt-space-xs border-t border-outline-variant/20 flex flex-col gap-space-sm">
+          <a class="cta-lead-btn w-full py-space-sm px-space-md bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg text-center shadow-sm flex items-center justify-center gap-space-xs hover:bg-primary transition-colors" href="#diagnostico-formulario">
+            <span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+            <span>Solicite uma Análise Técnica</span>
+          </a>
+          <a class="w-full py-space-sm px-space-md bg-surface-container text-primary rounded-lg font-label-lg text-label-lg text-center flex items-center justify-center gap-space-xs hover:bg-surface-container-high transition-colors" href="https://wa.me/5562998765432" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span>WhatsApp: (62) 99876-5432</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 md:pt-28 bg-surface">
+    <div class="flex flex-col w-full">
+
+      <!-- HERO SECTION -->
+      <section id="inicio" class="section-track relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-32">
+        <!-- Subtle Organic Glow Backdrop -->
+        <div class="pointer-events-none absolute -top-40 -left-20 h-96 w-96 rounded-full bg-primary-fixed-dim/20 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-40 -right-20 h-96 w-96 rounded-full bg-secondary-fixed/30 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-margin relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            <!-- Text & CTAs Column -->
+            <div class="lg:col-span-7 flex flex-col gap-space-lg">
+              <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full w-fit border border-outline-variant/20">
+                <span class="material-symbols-outlined text-primary text-[18px]">biotech</span>
+                <span class="font-data-mono text-data-mono text-primary font-semibold tracking-wider uppercase">
+                  Consultoria Agronômica Especializada & Manejo de Precisão
+                </span>
+              </div>
+
+              <div class="flex flex-col gap-space-md">
+                <h1 class="font-headline-xl text-headline-xl text-primary leading-tight">
+                  Transformamos solos e destravamos o verdadeiro potencial produtivo da sua fazenda
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                  Identificamos e corrigimos com rigor científico as causas invisíveis da baixa produtividade no campo. Aumente suas sacas por hectare, recupere a fertilidade profunda do solo e alcance máxima rentabilidade com sustentabilidade.
+                </p>
+              </div>
+
+              <!-- CTAs -->
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs">
+                <a class="cta-lead-btn inline-flex items-center justify-center gap-space-sm bg-primary-container text-on-primary px-space-xl py-space-md rounded-lg font-label-lg text-label-lg shadow-md hover:bg-primary hover:shadow-lg transition-all duration-200 cursor-pointer" href="#diagnostico-formulario">
+                  <span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+                  <span>Solicitar Diagnóstico Rápido de Solo</span>
+                </a>
+                <a class="inline-flex items-center justify-center gap-space-sm bg-surface-container-lowest text-secondary px-space-lg py-space-md rounded-lg font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-all duration-200 border border-outline-variant/30" href="https://wa.me/5562998765432" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[20px] text-primary">chat</span>
+                  <span>Falar no WhatsApp Agronômico</span>
+                </a>
+              </div>
+
+              <!-- Micro Credential Signal -->
+              <div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+                  <span class="font-data-mono text-data-mono">Laudo Rápido & Isento</span>
+                </div>
+                <span class="h-1 w-1 rounded-full bg-outline-variant"></span>
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary text-[16px]">engineering</span>
+                  <span class="font-data-mono text-data-mono">Engenheiros Agrônomos Seniores</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Analytical Diagnostic Visual Panel -->
+            <div class="lg:col-span-5 relative">
+              <div class="relative bg-surface-container-lowest p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md border border-outline-variant/30">
+                <!-- Header of analytical card -->
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+                  <div class="flex flex-col">
+                    <span class="font-data-mono text-data-mono text-primary font-semibold">TALHÃO-07B // DIAGNÓSTICO PROFUNDO</span>
+                    <span class="font-label-md text-label-md text-on-surface-variant">Perfil Químico-Físico 0-40cm</span>
+                  </div>
+                  <span class="px-space-xs py-0.5 bg-primary-fixed text-primary font-data-mono text-data-mono rounded">CALIBRADO</span>
+                </div>
+
+                <!-- Representative Photo Context -->
+                <div class="relative w-full h-48 rounded-lg overflow-hidden">
+                  <img class="w-full h-full object-cover" alt="Agrônomo examinando perfil do solo em trincheira de campo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9vp1awxCXJ1jBkogmtEUEHWxVpcoxpR6-YsmPn5cXAsbU7myj9aM7enFt1rf24EXjatJGOyaR20BmpK8b5uQVJz4u49fGlKFrgMfA-TOnGgEODFGeYtnreDYDH5WTU3gtuQbVaVX_iemwyN1sV9vc0Kx5tvDibfvLzVkBB3iZ0r_qmwLLbgMlDFLZZsnzJwKQzrjpUka2zWZyAl4agAZni7gWQxeer7kSEGzEWTKu4tqY7D-4uGUgNA"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-space-md">
+                    <span class="text-on-primary font-label-md text-label-md font-medium">Investigação in loco: Trincheira de Compactação & V%</span>
+                  </div>
+                </div>
+
+                <!-- Compact Telemetry Spectrum -->
+                <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm">
+                  <div class="flex justify-between items-center text-label-md font-label-md">
+                    <span class="text-on-surface-variant">Saturação por Bases (V%) Atual</span>
+                    <span class="font-data-mono text-primary font-semibold">41% → Alvo: 70%</span>
+                  </div>
+                  <div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+                    <div class="bg-tertiary-container h-full w-[41%]"></div>
+                    <div class="bg-primary-fixed-dim h-full w-[29%]"></div>
+                  </div>
+                  <div class="flex justify-between items-center text-[11px] font-data-mono text-on-surface-variant">
+                    <span>Crítico: &lt;45%</span>
+                    <span class="text-primary font-semibold">Correção: Gesso + Calcário</span>
+                  </div>
+                </div>
+
+                <!-- Micro Quick Data Points -->
+                <div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+                  <div class="p-space-sm bg-surface-container rounded-lg">
+                    <span class="font-label-md text-label-md text-on-surface-variant block">CTC Efetiva</span>
+                    <span class="font-data-mono text-headline-sm text-primary">12.4 <span class="text-label-md text-on-surface-variant font-normal">cmolc/dm³</span></span>
+                  </div>
+                  <div class="p-space-sm bg-surface-container rounded-lg">
+                    <span class="font-label-md text-label-md text-on-surface-variant block">Fósforo Mehlich</span>
+                    <span class="font-data-mono text-headline-sm text-tertiary-container">6.2 <span class="text-label-md text-on-surface-variant font-normal">mg/dm³</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI METRIC STRIP -->
+          <div class="mt-space-xl pt-space-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-lg text-headline-lg text-primary font-semibold">+35%</span>
+                <span class="material-symbols-outlined text-primary-fixed-dim text-[28px]">trending_up</span>
+              </div>
+              <span class="font-label-lg text-label-lg text-on-surface">Incremento Médio</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Ganhos comprovados em sacas/ha a partir de correções em profundidade.</p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-lg text-headline-lg text-primary font-semibold">+180 mil</span>
+                <span class="material-symbols-outlined text-primary-fixed-dim text-[28px]">public</span>
+              </div>
+              <span class="font-label-lg text-label-lg text-on-surface">Hectares Diagnosticados</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Lavouras mapeadas, recuperadas e monitoradas safra após safra.</p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-lg text-headline-lg text-primary font-semibold">98%</span>
+                <span class="material-symbols-outlined text-primary-fixed-dim text-[28px]">handshake</span>
+              </div>
+              <span class="font-label-lg text-label-lg text-on-surface">Retenção de Produtores</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Fidelidade e parceria técnica continuada com fazendas de alta escala.</p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-lg text-headline-lg text-primary font-semibold">1ª Safra</span>
+                <span class="material-symbols-outlined text-primary-fixed-dim text-[28px]">savings</span>
+              </div>
+              <span class="font-label-lg text-label-lg text-on-surface">ROI Comprovado</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Eliminação do desperdício químico com retorno financeiro imediato.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO SOBRE NÓS -->
+      <section id="sobre-nos" class="section-track w-full py-space-xl lg:py-28 bg-surface">
+        <div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+            <div class="lg:col-span-5 flex flex-col gap-space-md">
+              <span class="font-data-mono text-data-mono text-secondary uppercase tracking-widest font-semibold">QUEM SOMOS</span>
+              <h2 class="font-headline-lg text-headline-lg text-primary leading-snug">
+                Expertise agronômica de campo com fundamentação biológica e química avançada
+              </h2>
+              <div class="w-16 h-1 bg-secondary-container rounded-full"></div>
+            </div>
+
+            <div class="lg:col-span-7 flex flex-col gap-space-md text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+              <p>
+                A <strong class="text-on-surface font-semibold">AGIJ VERT</strong> nasceu da convicção de que nenhuma terra tem baixa produtividade por acaso. Por trás de uma lavoura estagnada existem gargalos químicos, físicos e biológicos silenciosos: compactação, desequilíbrio de bases, bloqueio de micronutrientes e perda de microbiota ativa.
+              </p>
+              <p>
+                Atuamos lado a lado com fazendeiros, gestores agrícolas e investidores, transformando diagnósticos laboratoriais e medições in loco em planos operacionais claros, pragmáticos e de alto retorno financeiro. Não vendemos produtos ou insumos: oferecemos inteligência técnica independente para fazer o seu solo render o máximo que ele pode entregar.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3 Pilares Ilustrados -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pt-space-md">
+            <!-- Pilar 1 -->
+            <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md transition-all duration-300 hover:-translate-y-1 hover:shadow-md border border-outline-variant/20">
+              <div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+                <span class="material-symbols-outlined text-[26px]">hiking</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Presença no Campo (In Loco)</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Nós calçamos a botina e vamos à trincheira e ao talhão com o produtor. Aferição física real de subsolagem, arquitetura radicular e amostragem estratificada.
+              </p>
+              <div class="mt-auto pt-space-xs font-data-mono text-data-mono text-primary font-medium flex items-center gap-space-xs">
+                <span>Metodologia Trincheira 360°</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Pilar 2 -->
+            <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md transition-all duration-300 hover:-translate-y-1 hover:shadow-md border border-outline-variant/20">
+              <div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+                <span class="material-symbols-outlined text-[26px]">balance</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Independência Técnica</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Recomendações 100% isentas e éticas. Nosso único compromisso é com o que o seu solo realmente necessita e com a maximização da sua margem líquida.
+              </p>
+              <div class="mt-auto pt-space-xs font-data-mono text-data-mono text-primary font-medium flex items-center gap-space-xs">
+                <span>Zero Conflito Comercial</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Pilar 3 -->
+            <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md transition-all duration-300 hover:-translate-y-1 hover:shadow-md border border-outline-variant/20">
+              <div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+                <span class="material-symbols-outlined text-[26px]">hub</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Visão Holística do Solo</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Química, física e biologia do solo trabalhando em sinergia máxima. Raízes que exploram mais volume de terra resistem melhor a secas prolongadas.
+              </p>
+              <div class="mt-auto pt-space-xs font-data-mono text-data-mono text-primary font-medium flex items-center gap-space-xs">
+                <span>Equilíbrio Químico + Bioma</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOLUÇÕES E SERVIÇOS ESPECIALIZADOS -->
+      <section id="solucoes" class="section-track w-full py-space-xl lg:py-28 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+            <div class="flex flex-col gap-space-xs max-w-2xl">
+              <span class="font-data-mono text-data-mono text-secondary uppercase tracking-widest font-semibold">SERVIÇOS DE ALTA PERFORMANCE</span>
+              <h2 class="font-headline-lg text-headline-lg text-primary">
+                Metodologias comprovadas para cada fase do seu ciclo agrícola
+              </h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+              Da amostragem detalhada à colheita recorde: protocolos analíticos adaptados aos biomas Cerrado, Sul e Matopiba.
+            </p>
+          </div>
+
+          <!-- 3 Detailed Analytical Service Cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+            <!-- Service 1 -->
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-lg group hover:shadow-lg transition-all duration-300 border border-outline-variant/30">
+              <div class="flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="font-data-mono text-data-mono text-secondary font-bold">SOLUÇÃO #01</span>
+                  <span class="material-symbols-outlined text-primary text-[28px]">search_insights</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-primary">Diagnóstico de Baixa Produtividade</h3>
+                  <p class="font-label-md text-label-md text-on-surface-variant mt-1">Raio-X minucioso de gargalos que travam a colheita</p>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Investigação aprofundada de talhões desuniformes, análises físicas e químicas em camadas (0-20, 20-40cm), histórico de manejo e identificação precisa do fator limitante pela Lei do Mínimo de Liebig.
+                </p>
+                <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+                  <span class="font-data-mono text-[11px] text-primary uppercase font-bold tracking-wider">Entregáveis Oficiais</span>
+                  <ul class="font-body-sm text-body-sm text-on-surface flex flex-col gap-1">
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Laudo técnico georreferenciado e auditado</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Mapa de prioridades e zonas críticas de intervenção</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Avaliação de compactação e drenagem subsuperficial</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CTA Solução 1 -->
+              <a class="cta-lead-btn inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-surface-container text-primary rounded-lg font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors cursor-pointer" data-preset-challenge="baixa-produtividade" href="#diagnostico-formulario">
+                <span>Contratar Diagnóstico</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-lg group hover:shadow-lg transition-all duration-300 border border-outline-variant/30">
+              <div class="flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="font-data-mono text-data-mono text-secondary font-bold">SOLUÇÃO #02</span>
+                  <span class="material-symbols-outlined text-primary text-[28px]">eco</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-primary">Manejo e Recuperação de Solo</h3>
+                  <p class="font-label-md text-label-md text-on-surface-variant mt-1">Vitalidade biológica e fertilidade de longo prazo</p>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Correção do perfil do solo, descompactação biológica e mecânica, gessagem e calagem de precisão, inoculação biológica e regeneração da microbiota benéfica para suportar estresses hídricos e climáticos.
+                </p>
+                <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+                  <span class="font-data-mono text-[11px] text-primary uppercase font-bold tracking-wider">Entregáveis Oficiais</span>
+                  <ul class="font-body-sm text-body-sm text-on-surface flex flex-col gap-1">
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Cronograma agronômico plurianual de correção</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Protocolo de bioativação e fixação biológica</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Recomendação de doses exatas por hectare</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CTA Solução 2 -->
+              <a class="cta-lead-btn inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-surface-container text-primary rounded-lg font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors cursor-pointer" data-preset-challenge="compactacao" href="#diagnostico-formulario">
+                <span>Estruturar Recuperação</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-lg group hover:shadow-lg transition-all duration-300 border border-outline-variant/30">
+              <div class="flex flex-col gap-space-md">
+                <div class="flex items-center justify-between">
+                  <span class="font-data-mono text-data-mono text-secondary font-bold">SOLUÇÃO #03</span>
+                  <span class="material-symbols-outlined text-primary text-[28px]">monitoring</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-primary">Consultoria Agronômica Personalizada</h3>
+                  <p class="font-label-md text-label-md text-on-surface-variant mt-1">Acompanhamento contínuo e gestão técnica da safra</p>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Visitas periódicas programadas, monitoramento de desenvolvimento vegetativo, regulagem fina de adubação foliar e de base, e direcionamento executivo para tomadas de decisão rápidas e assertivas.
+                </p>
+                <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+                  <span class="font-data-mono text-[11px] text-primary uppercase font-bold tracking-wider">Entregáveis Oficiais</span>
+                  <ul class="font-body-sm text-body-sm text-on-surface flex flex-col gap-1">
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Relatórios periódicos de evolução e fenologia</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Reuniões executivas com a diretoria agrícola</span>
+                    </li>
+                    <li class="flex items-center gap-space-xs">
+                      <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                      <span>Canal prioritário de suporte técnico via WhatsApp</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CTA Solução 3 -->
+              <a class="cta-lead-btn inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-surface-container text-primary rounded-lg font-label-lg text-label-lg group-hover:bg-primary group-hover:text-on-primary transition-colors cursor-pointer" data-preset-challenge="duvida-manejo" href="#diagnostico-formulario">
+                <span>Iniciar Acompanhamento</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIFERENCIAIS / POR QUE ESCOLHER A AGIJ VERT -->
+      <section id="diferenciais" class="w-full py-space-xl lg:py-28 bg-surface">
+        <div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-xl">
+          <div class="text-center max-w-3xl mx-auto flex flex-col gap-space-xs items-center">
+            <span class="font-data-mono text-data-mono text-secondary uppercase tracking-widest font-semibold">VANTAGEM COMPETITIVA</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary">
+              Por que os principais produtores confiam suas terras à AGIJ VERT
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+              Trabalhamos com fatos científicos e matemática de produtividade para gerar retorno financeiro líquido incontestável.
+            </p>
+          </div>
+
+          <!-- 4 Cards Modernos de Diferenciais -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">query_stats</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Resultados Mensuráveis</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Medimos o sucesso em sacas adicionais colhidas por hectare e redução tangível no desperdício de insumos com calibração inteligente.
+              </p>
+            </div>
+
+            <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">pin_drop</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Atendimento In Loco</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Sem soluções prontas de prateleira ou receitas de gaveta; cada talhão possui seu histórico térmico, edáfico e um protocolo exclusivo.
+              </p>
+            </div>
+
+            <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">science</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Agricultura Regenerativa</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Conciliamos o que há de mais moderno em tecnologia de precisão com a bioativação e sustentação da microbiota profunda do solo.
+              </p>
+            </div>
+
+            <div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md border border-outline-variant/20 hover:border-primary-fixed transition-colors">
+              <div class="w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[26px]">account_balance_wallet</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Sustentabilidade Financeira</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Rentabilidade crescente a curto e longo prazo, preservando e valorizando o patrimônio mais estratégico e valioso da fazenda: a terra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASOS DE SUCESSO & PROVA SOCIAL -->
+      <section id="casos-de-sucesso" class="section-track w-full py-space-xl lg:py-28 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+            <div class="flex flex-col gap-space-xs max-w-2xl">
+              <span class="font-data-mono text-data-mono text-secondary uppercase tracking-widest font-semibold">CASOS REAIS & PROVA SOCIAL</span>
+              <h2 class="font-headline-lg text-headline-lg text-primary">
+                Resultados auditados por quem produz no coração do agronegócio
+              </h2>
+            </div>
+            <div class="flex items-center gap-space-sm text-on-surface-variant font-data-mono text-data-mono">
+              <span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+              <span>Produtores Reais • Safras 2023/2024</span>
+            </div>
+          </div>
+
+          <!-- Testimonial Bento-Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+            <!-- Testimonial 1 -->
+            <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-lg relative overflow-hidden border border-outline-variant/30">
+              <div class="absolute top-0 left-0 w-full h-1.5 bg-primary"></div>
+              <div class="flex flex-col gap-space-md">
+                <div class="flex items-center gap-space-xs text-tertiary-container">
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                </div>
+                <div class="p-space-xs px-space-sm bg-primary-fixed text-primary font-data-mono text-data-mono rounded w-fit">
+                  +22 sacas/ha no talhão crítico
+                </div>
+                <p class="font-headline-sm text-headline-sm text-on-surface italic leading-snug">
+                  “Saímos de 54 para 76 sacas de soja por hectare no terceiro talhão, que antes considerávamos terra cansada. A AGIJ VERT identificou uma compactação severa e corrigiu o perfil com precisão cirúrgica.”
+                </p>
+              </div>
+              <div class="flex items-center gap-space-md pt-space-md border-t border-surface-container">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center font-headline-sm text-primary font-semibold">
+                  CS
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-lg text-label-lg text-on-surface font-semibold">Carlos Eduardo Silveira</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Fazenda Santa Fé • Mato Grosso (4.200 ha)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-lg relative overflow-hidden border border-outline-variant/30">
+              <div class="absolute top-0 left-0 w-full h-1.5 bg-secondary"></div>
+              <div class="flex flex-col gap-space-md">
+                <div class="flex items-center gap-space-xs text-tertiary-container">
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                </div>
+                <div class="p-space-xs px-space-sm bg-secondary-fixed text-secondary font-data-mono text-data-mono rounded w-fit">
+                  Payback na 1ª colheita
+                </div>
+                <p class="font-headline-sm text-headline-sm text-on-surface italic leading-snug">
+                  “A consultoria pagou seu investimento já na primeira safra com a economia de adubação desnecessária e o vigor que a planta ganhou. Ter agrônomos que realmente entendem de solo e vão para a terra faz toda a diferença.”
+                </p>
+              </div>
+              <div class="flex items-center gap-space-md pt-space-md border-t border-surface-container">
+                <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center font-headline-sm text-secondary font-semibold">
+                  MP
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-lg text-label-lg text-on-surface font-semibold">Marcos Vinicius Prado</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Grupo Agropecuária Vale Verde • Goiás (2.800 ha)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-lg relative overflow-hidden border border-outline-variant/30">
+              <div class="absolute top-0 left-0 w-full h-1.5 bg-primary"></div>
+              <div class="flex flex-col gap-space-md">
+                <div class="flex items-center gap-space-xs text-tertiary-container">
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star</span>
+                </div>
+                <div class="p-space-xs px-space-sm bg-primary-fixed text-primary font-data-mono text-data-mono rounded w-fit">
+                  Resiliência em Veranico
+                </div>
+                <p class="font-headline-sm text-headline-sm text-on-surface italic leading-snug">
+                  “O diagnóstico biológico da AGIJ VERT salvou nossa lavoura de milho safrinha durante o veranico. Raízes profundas e solo vivo foram a chave da segurança produtiva.”
+                </p>
+              </div>
+              <div class="flex items-center gap-space-md pt-space-md border-t border-surface-container">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center font-headline-sm text-primary font-semibold">
+                  BD
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-lg text-label-lg text-on-surface font-semibold">Beatriz Dorneles</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Fazenda Boa Esperança • Paraná (1.650 ha)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULÁRIO FINAL DE CONVERSÃO & CONTATO -->
+      <section id="diagnostico-formulario" class="section-track w-full py-space-xl lg:py-28 bg-primary text-on-primary relative overflow-hidden">
+        <!-- Anchor auxiliar para links de Contato -->
+        <span id="contato" class="absolute -top-24 opacity-0 pointer-events-none"></span>
+
+        <!-- Atmospheric Texture Overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#9dd3b0_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-margin relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            <!-- Lead Copy & Trust signals -->
+            <div class="lg:col-span-5 flex flex-col gap-space-lg">
+              <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-primary-container text-on-primary-container rounded-full w-fit">
+                <span class="material-symbols-outlined text-[18px]">flag</span>
+                <span class="font-data-mono text-data-mono uppercase tracking-wider">Primeiro Passo Operacional</span>
+              </div>
+
+              <div class="flex flex-col gap-space-sm">
+                <h2 class="font-headline-xl text-headline-xl text-on-primary leading-tight">
+                  Pronto para descobrir o que está limitando a produtividade da sua fazenda?
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+                  Preencha o formulário para receber um contato direto de um de nossos agrônomos seniores e agendar uma avaliação inicial técnica da sua área produtiva.
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-space-sm pt-space-xs font-body-md text-body-md text-on-primary-container">
+                <div class="flex items-center gap-space-sm">
+                  <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">security</span>
+                  <span>Atendimento sigiloso e análise sem compromisso de compra</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">schedule</span>
+                  <span>Retorno e contato qualificado em até 24 horas úteis</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">agriculture</span>
+                  <span>Engenheiros com registro profissional no CREA</span>
+                </div>
+              </div>
+
+              <!-- Direct Line Card -->
+              <div class="bg-primary-container p-space-md rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-md border border-primary-fixed-dim/20 shadow-md">
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md text-primary-fixed-dim">Prefere conversar agora?</span>
+                  <span class="font-headline-sm text-headline-sm text-on-primary">+55 (62) 99876-5432</span>
+                </div>
+                <a class="px-space-md py-space-xs bg-surface text-primary rounded-lg font-label-lg text-label-lg inline-flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors shadow-xs" href="https://wa.me/5562998765432" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- High-Conversion Clean Form Container -->
+            <div class="lg:col-span-7">
+              <div id="form-card-container" class="bg-surface-container-lowest text-on-surface p-space-lg sm:p-space-xl rounded-2xl shadow-2xl flex flex-col gap-space-md border border-white/20 transition-all duration-300">
+                <div class="flex flex-col">
+                  <h3 class="font-headline-md text-headline-md text-primary">Solicitar Avaliação Técnica Inicial</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Dados protegidos por sigilo de propriedade agropecuária.</p>
+                </div>
+
+                <!-- Formulário com validação JS completa -->
+                <form id="lead-agronomic-form" class="flex flex-col gap-space-md" novalidate>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                    <!-- Nome Completo -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="lead-name">
+                        <span>Nome Completo *</span>
+                        <span class="text-error text-[11px] font-normal hidden error-msg" id="error-lead-name">Informe seu nome</span>
+                      </label>
+                      <input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="lead-name" name="name" placeholder="Ex: Roberto Alencar" required="" type="text"/>
+                    </div>
+
+                    <!-- Telefone / WhatsApp -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="lead-phone">
+                        <span>Telefone / WhatsApp com DDD *</span>
+                        <span class="text-error text-[11px] font-normal hidden error-msg" id="error-lead-phone">Número incompleto</span>
+                      </label>
+                      <input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="lead-phone" name="phone" placeholder="(62) 99999-9999" required="" type="tel" maxlength="15"/>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                    <!-- Tamanho da Propriedade -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="lead-hectares">
+                        <span>Área da Propriedade (Hectares) *</span>
+                        <span class="text-error text-[11px] font-normal hidden error-msg" id="error-lead-hectares">Informe a área</span>
+                      </label>
+                      <input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="lead-hectares" name="hectares" placeholder="Ex: 1200" required="" type="number" min="1"/>
+                    </div>
+
+                    <!-- Cidade / Estado -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="lead-location">
+                        <span>Cidade / Estado (UF) *</span>
+                        <span class="text-error text-[11px] font-normal hidden error-msg" id="error-lead-location">Informe a localização</span>
+                      </label>
+                      <input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="lead-location" name="location" placeholder="Ex: Rio Verde / GO" required="" type="text"/>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                    <!-- Principal Cultura -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="lead-crop">
+                        <span>Principal Cultura *</span>
+                        <span class="text-error text-[11px] font-normal hidden error-msg" id="error-lead-crop">Selecione uma cultura</span>
+                      </label>
+                      <select class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all cursor-pointer" id="lead-crop" name="crop" required="">
+                        <option disabled="" selected="" value="">Selecione a cultura</option>
+                        <option value="soja">Soja</option>
+                        <option value="milho">Milho Safrinha</option>
+                        <option value="algodao">Algodão</option>
+                        <option value="cafe">Café</option>
+                        <option value="pecuaria">Pecuária / Pastagem</option>
+                        <option value="outras">Outras Culturas</option>
+                      </select>
+                    </div>
+
+                    <!-- Desafio Atual -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="lead-challenge">
+                        <span>Desafio Agronômico Atual *</span>
+                        <span class="text-error text-[11px] font-normal hidden error-msg" id="error-lead-challenge">Selecione o desafio</span>
+                      </label>
+                      <select class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all cursor-pointer" id="lead-challenge" name="challenge" required="">
+                        <option disabled="" selected="" value="">Qual o principal gargalo?</option>
+                        <option value="baixa-produtividade">Baixa produtividade / Estagnação</option>
+                        <option value="compactacao">Solo compactado / Drenagem ruim</option>
+                        <option value="duvida-manejo">Otimização de adubação e calcário</option>
+                        <option value="desuniformidade">Talhões com maturação desuniforme</option>
+                        <option value="outros">Diagnóstico Geral Preventivo</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Botão de Envio com indicador de progresso -->
+                  <button id="form-submit-btn" class="mt-space-xs w-full py-space-md bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg shadow-md hover:bg-primary transition-all duration-200 flex items-center justify-center gap-space-sm cursor-pointer disabled:opacity-75 disabled:cursor-wait" type="submit">
+                    <span id="submit-icon" class="material-symbols-outlined text-[20px]">send</span>
+                    <span id="submit-text">Solicitar Análise Técnica Gratuita</span>
+                  </button>
+
+                  <!-- Elemento de Feedback de Sucesso com Animação -->
+                  <div class="hidden p-space-md bg-primary-fixed/25 border border-primary-fixed text-primary rounded-xl font-label-md text-label-md text-center transition-all duration-300" id="form-feedback" role="alert" aria-live="polite">
+                    <div class="flex flex-col items-center gap-2">
+                      <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[24px]">task_alt</span>
+                      </div>
+                      <div class="flex flex-col gap-0.5">
+                        <strong class="font-headline-sm text-primary text-[18px]">Solicitação recebida com sucesso!</strong>
+                        <span id="feedback-message-detail" class="font-body-md text-on-surface">Um de nossos engenheiros agrônomos entrará em contato via WhatsApp nas próximas horas.</span>
+                      </div>
+                      <button type="button" id="form-feedback-close" class="mt-1 text-[12px] font-data-mono text-secondary hover:underline cursor-pointer">
+                        Enviar outra solicitação
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Micro Aviso Legal -->
+                  <p class="font-body-sm text-body-sm text-on-surface-variant text-center">
+                    Seus dados serão tratados com sigilo profissional conforme a LGPD e o código de ética do CONFEA/CREA.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FLOATING QUICK WHATSAPP CALLOUT (DISCRETO & TÉCNICO) -->
+      <div id="floating-whatsapp-widget" class="fixed bottom-6 right-6 z-40 transition-transform duration-300">
+        <a class="flex items-center gap-space-sm px-4 py-3 bg-primary text-on-primary rounded-full shadow-2xl hover:bg-primary-container transition-all hover:scale-105 border border-primary-fixed-dim/30 group cursor-pointer" href="https://wa.me/5562998765432" rel="noopener noreferrer" target="_blank" aria-label="Plantão Técnico no WhatsApp">
+          <span class="material-symbols-outlined text-[24px] text-primary-fixed group-hover:rotate-12 transition-transform">support_agent</span>
+          <div class="flex flex-col text-left">
+            <span class="font-label-md text-label-md font-bold leading-tight">Plantão Técnico</span>
+            <span class="font-data-mono text-[11px] text-primary-fixed-dim leading-none">Fale com Agrônomo</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="w-full bg-surface-container-low pt-space-xl pb-space-lg border-t border-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl">
+        <div class="flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm">
+            <span class="font-headline-md text-headline-md text-primary">AGIJ VERT</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Consultoria agronômica e diagnósticos de fertilidade de solo com precisão científica e foco no aumento sustentável da produtividade agrícola em larga escala.
+          </p>
+          <div class="flex items-center gap-space-sm text-on-surface-variant pt-space-xs">
+            <span class="material-symbols-outlined text-[20px] text-primary">psychology</span>
+            <span class="font-data-mono text-data-mono text-on-surface">Precisão • Bioquímica • Produtividade</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-space-xs">Navegação</h3>
+          <a class="nav-link font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-section="inicio" href="#inicio">Início</a>
+          <a class="nav-link font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-section="sobre-nos" href="#sobre-nos">Sobre Nós</a>
+          <a class="nav-link font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-section="solucoes" href="#solucoes">Soluções Agronômicas</a>
+          <a class="nav-link font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-section="casos-de-sucesso" href="#casos-de-sucesso">Casos de Sucesso</a>
+          <a class="cta-lead-btn font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#diagnostico-formulario">Solicitar Diagnóstico</a>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-space-xs">Canais Diretos</h3>
+          <div class="flex items-start gap-space-sm text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">call</span>
+            <div>
+              <p class="font-label-md text-label-md text-on-surface font-semibold">WhatsApp Agronômico</p>
+              <a href="https://wa.me/5562998765432" target="_blank" rel="noopener noreferrer" class="font-body-sm text-body-sm text-primary hover:underline">
+                +55 (62) 99876-5432
+              </a>
+            </div>
+          </div>
+          <div class="flex items-start gap-space-sm text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">mail</span>
+            <div>
+              <p class="font-label-md text-label-md text-on-surface font-semibold">E-mail Corporativo</p>
+              <a href="mailto:contato@agijvert.agr.br" class="font-body-sm text-body-sm text-primary hover:underline">
+                contato@agijvert.agr.br
+              </a>
+            </div>
+          </div>
+          <div class="flex items-start gap-space-sm text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span>
+            <div>
+              <p class="font-label-md text-label-md text-on-surface font-semibold">Sede Operacional</p>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Polo Agroindustrial - Rio Verde / GO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-md">
+          <h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-space-xs">Credenciais Técnicas</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Auditorias de solo georreferenciadas com calibração laboratorial conforme normas Embrapa e MAPA.
+          </p>
+          <div class="p-space-md bg-surface-container rounded-lg border border-outline-variant/20">
+            <p class="font-data-mono text-data-mono text-primary font-semibold">CREA-GO 28491/D</p>
+            <p class="font-label-md text-label-md text-on-surface-variant">Registro Técnico de Especialidade em Manejo e Fertilidade</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md border-t border-outline-variant/20">
+        <p>© 2025 AGIJ VERT Consultoria no Agronegócio Ltda. Todos os direitos reservados.</p>
+        <div class="flex items-center gap-space-lg">
+          <span class="hover:underline cursor-pointer">Privacidade e Segurança de Dados</span>
+          <span class="hover:underline cursor-pointer">Termos de Serviço Técnico</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================== -->
+  <!-- JAVASCRIPT PURO (VANILLA JS) PARA DINAMISMO COMPLETO     -->
+  <!-- ======================================================== -->
+  <script>
+    /**
+     * AGIJ VERT - Módulo de Interatividade e Conversão
+     * Desenvolvido em Vanilla JS para máxima performance e compatibilidade
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+      'use strict';
+
+      // ----------------------------------------------------
+      // 1. CONSTANTES & SELETORES PRINCIPAIS
+      // ----------------------------------------------------
+      const header = document.getElementById('main-header');
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+      const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+      const leadForm = document.getElementById('lead-agronomic-form');
+      const formFeedback = document.getElementById('form-feedback');
+      const feedbackDetail = document.getElementById('feedback-message-detail');
+      const feedbackCloseBtn = document.getElementById('form-feedback-close');
+      const submitBtn = document.getElementById('form-submit-btn');
+      const submitText = document.getElementById('submit-text');
+      const submitIcon = document.getElementById('submit-icon');
+      const formCardContainer = document.getElementById('form-card-container');
+      const phoneInput = document.getElementById('lead-phone');
+
+      // Classes para link ativo no menu desktop
+      const ACTIVE_NAV_CLASSES = ['bg-primary-container', 'text-on-primary', 'shadow-xs', 'font-semibold'];
+      const INACTIVE_NAV_CLASSES = ['text-on-surface-variant'];
+
+      // Tempo de auto-ocultação do feedback (em milissegundos)
+      let feedbackTimeoutId = null;
+
+      // ----------------------------------------------------
+      // 2. ROLAGEM SUAVE COM COMPENSAÇÃO DE HEADER
+      // ----------------------------------------------------
+      function getHeaderHeight() {
+        return header ? header.getBoundingClientRect().height : 80;
+      }
+
+      function smoothScrollTo(targetSelector, callback) {
+        let targetEl = null;
+        if (targetSelector.startsWith('#')) {
+          targetEl = document.getElementById(targetSelector.substring(1));
+        } else {
+          targetEl = document.querySelector(targetSelector);
+        }
+
+        if (!targetEl) return;
+
+        const headerHeight = getHeaderHeight();
+        const elementPosition = targetEl.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = Math.max(0, elementPosition - headerHeight - 16);
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        // Atualiza a URL sem saltos bruscos
+        if (window.history && window.history.pushState) {
+          window.history.pushState(null, '', targetSelector);
+        }
+
+        if (typeof callback === 'function') {
+          setTimeout(callback, 500);
+        }
+      }
+
+      // Adiciona listener a todos os links com âncora interna (#)
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (!href || href === '#') return;
+
+          e.preventDefault();
+
+          // Se a gaveta mobile estiver aberta, feche-a
+          if (mobileMenuDrawer && !mobileMenuDrawer.classList.contains('hidden')) {
+            toggleMobileMenu(false);
+          }
+
+          smoothScrollTo(href);
+        });
+      });
+
+      // ----------------------------------------------------
+      // 3. ATUALIZAÇÃO DO MENU ATIVO NO SCROLL (SCROLL SPY)
+      // ----------------------------------------------------
+      const trackSections = document.querySelectorAll('section.section-track, section[id]');
+      const desktopNavLinks = document.querySelectorAll('#desktop-nav .nav-link');
+      const mobileNavLinks = document.querySelectorAll('#mobile-menu-drawer .mobile-nav-link');
+
+      function updateActiveNav(activeId) {
+        // Desktop
+        desktopNavLinks.forEach(function (link) {
+          const href = link.getAttribute('href');
+          const sectionKey = link.getAttribute('data-section');
+          const isMatch = href === '#' + activeId || sectionKey === activeId;
+
+          if (isMatch) {
+            ACTIVE_NAV_CLASSES.forEach(function (cls) { link.classList.add(cls); });
+            INACTIVE_NAV_CLASSES.forEach(function (cls) { link.classList.remove(cls); });
+          } else {
+            ACTIVE_NAV_CLASSES.forEach(function (cls) { link.classList.remove(cls); });
+            INACTIVE_NAV_CLASSES.forEach(function (cls) { link.classList.add(cls); });
+          }
+        });
+
+        // Mobile
+        mobileNavLinks.forEach(function (link) {
+          const href = link.getAttribute('href');
+          const sectionKey = link.getAttribute('data-section');
+          const isMatch = href === '#' + activeId || sectionKey === activeId;
+
+          if (isMatch) {
+            link.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+            link.classList.remove('text-on-surface-variant');
+          } else {
+            link.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+            link.classList.add('text-on-surface-variant');
+          }
+        });
+      }
+
+      function handleScrollSpy() {
+        const headerHeight = getHeaderHeight();
+        const scrollPosition = window.pageYOffset + headerHeight + 60;
+
+        let currentSectionId = '';
+
+        trackSections.forEach(function (section) {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            currentSectionId = section.getAttribute('id');
+          }
+        });
+
+        // Se estiver no topo absoluto da página
+        if (window.pageYOffset < 150) {
+          currentSectionId = 'inicio';
+        }
+
+        // Se estiver no final absoluto da página (rodapé/formulário)
+        if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 80) {
+          currentSectionId = 'diagnostico-formulario';
+        }
+
+        if (currentSectionId) {
+          updateActiveNav(currentSectionId);
+        }
+      }
+
+      window.addEventListener('scroll', handleScrollSpy, { passive: true });
+      handleScrollSpy(); // Inicialização no carregamento
+
+      // ----------------------------------------------------
+      // 4. MENU RESPONSIVO MOBILE (GAVETA)
+      // ----------------------------------------------------
+      function toggleMobileMenu(forceState) {
+        if (!mobileMenuDrawer || !mobileMenuToggle) return;
+
+        const isCurrentlyOpen = !mobileMenuDrawer.classList.contains('hidden');
+        const willOpen = typeof forceState === 'boolean' ? forceState : !isCurrentlyOpen;
+
+        if (willOpen) {
+          mobileMenuDrawer.classList.remove('hidden');
+          mobileMenuToggle.setAttribute('aria-expanded', 'true');
+          if (mobileMenuIcon) mobileMenuIcon.textContent = 'close';
+        } else {
+          mobileMenuDrawer.classList.add('hidden');
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+          if (mobileMenuIcon) mobileMenuIcon.textContent = 'menu';
+        }
+      }
+
+      if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          toggleMobileMenu();
+        });
+      }
+
+      // Fecha o menu se o usuário clicar fora dele
+      document.addEventListener('click', function (e) {
+        if (!mobileMenuDrawer || mobileMenuDrawer.classList.contains('hidden')) return;
+        if (!mobileMenuDrawer.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+          toggleMobileMenu(false);
+        }
+      });
+
+      // Fecha o menu ao pressionar a tecla ESC
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && mobileMenuDrawer && !mobileMenuDrawer.classList.contains('hidden')) {
+          toggleMobileMenu(false);
+        }
+      });
+
+      // ----------------------------------------------------
+      // 5. BOTÕES DE CONVERSÃO (CTA) -> FORMULÁRIO COM FOCO
+      // ----------------------------------------------------
+      function focusFormAndHighlight(presetChallenge) {
+        // Se houver um desafio pré-definido pelo card (ex: baixa-produtividade)
+        if (presetChallenge) {
+          const challengeSelect = document.getElementById('lead-challenge');
+          if (challengeSelect) {
+            challengeSelect.value = presetChallenge;
+            challengeSelect.dispatchEvent(new Event('change'));
+          }
+        }
+
+        smoothScrollTo('#diagnostico-formulario', function () {
+          const firstField = document.getElementById('lead-name');
+          if (firstField) {
+            firstField.focus({ preventScroll: true });
+          }
+
+          if (formCardContainer) {
+            formCardContainer.classList.remove('form-pulse-highlight');
+            // Força reflow para reiniciar animação
+            void formCardContainer.offsetWidth;
+            formCardContainer.classList.add('form-pulse-highlight');
+          }
+        });
+      }
+
+      document.querySelectorAll('.cta-lead-btn').forEach(function (button) {
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          const preset = this.getAttribute('data-preset-challenge');
+          focusFormAndHighlight(preset);
+        });
+      });
+
+      // ----------------------------------------------------
+      // 6. MÁSCARA AUTOMÁTICA DE TELEFONE (PADRÃO BRASIL)
+      // ----------------------------------------------------
+      if (phoneInput) {
+        phoneInput.addEventListener('input', function (e) {
+          let value = e.target.value.replace(/\D/g, '');
+          if (value.length > 11) value = value.slice(0, 11);
+
+          if (value.length > 10) {
+            // Formato Celular: (XX) XXXXX-XXXX
+            value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+          } else if (value.length > 6) {
+            // Formato Fixo: (XX) XXXX-XXXX
+            value = value.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+          } else if (value.length > 2) {
+            value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+          } else if (value.length > 0) {
+            value = value.replace(/^(\d*)/, '($1');
+          }
+          e.target.value = value;
+          clearFieldError(phoneInput);
+        });
+      }
+
+      // ----------------------------------------------------
+      // 7. VALIDAÇÃO INTELIGENTE DO FORMULÁRIO DE LEAD
+      // ----------------------------------------------------
+      function showFieldError(field, errorId, message) {
+        field.classList.add('border-error', 'ring-2', 'ring-error/40', 'bg-red-50/30');
+        field.classList.remove('border-outline-variant/40');
+        const errorEl = document.getElementById(errorId);
+        if (errorEl) {
+          if (message) errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+        }
+      }
+
+      function clearFieldError(field) {
+        field.classList.remove('border-error', 'ring-2', 'ring-error/40', 'bg-red-50/30');
+        field.classList.add('border-outline-variant/40');
+        const errorId = 'error-' + field.id;
+        const errorEl = document.getElementById(errorId);
+        if (errorEl) {
+          errorEl.classList.add('hidden');
+        }
+      }
+
+      // Limpar erro em tempo real ao interagir
+      if (leadForm) {
+        const formInputs = leadForm.querySelectorAll('input, select');
+        formInputs.forEach(function (input) {
+          input.addEventListener('input', function () { clearFieldError(this); });
+          input.addEventListener('change', function () { clearFieldError(this); });
+        });
+      }
+
+      function validateForm() {
+        let isValid = true;
+        let firstInvalidField = null;
+
+        const nameField = document.getElementById('lead-name');
+        const phoneField = document.getElementById('lead-phone');
+        const hectaresField = document.getElementById('lead-hectares');
+        const locationField = document.getElementById('lead-location');
+        const cropField = document.getElementById('lead-crop');
+        const challengeField = document.getElementById('lead-challenge');
+
+        // Validação Nome
+        if (!nameField || nameField.value.trim().length < 3) {
+          showFieldError(nameField, 'error-lead-name', 'Informe seu nome completo');
+          if (!firstInvalidField) firstInvalidField = nameField;
+          isValid = false;
+        } else {
+          clearFieldError(nameField);
+        }
+
+        // Validação Telefone
+        const cleanPhone = phoneField ? phoneField.value.replace(/\D/g, '') : '';
+        if (!phoneField || cleanPhone.length < 10) {
+          showFieldError(phoneField, 'error-lead-phone', 'Informe telefone com DDD válido');
+          if (!firstInvalidField) firstInvalidField = phoneField;
+          isValid = false;
+        } else {
+          clearFieldError(phoneField);
+        }
+
+        // Validação Hectares
+        const hectaresVal = hectaresField ? parseFloat(hectaresField.value) : 0;
+        if (!hectaresField || isNaN(hectaresVal) || hectaresVal <= 0) {
+          showFieldError(hectaresField, 'error-lead-hectares', 'Área deve ser maior que 0');
+          if (!firstInvalidField) firstInvalidField = hectaresField;
+          isValid = false;
+        } else {
+          clearFieldError(hectaresField);
+        }
+
+        // Validação Cidade/Estado
+        if (!locationField || locationField.value.trim().length < 3) {
+          showFieldError(locationField, 'error-lead-location', 'Informe cidade e estado');
+          if (!firstInvalidField) firstInvalidField = locationField;
+          isValid = false;
+        } else {
+          clearFieldError(locationField);
+        }
+
+        // Validação Cultura
+        if (!cropField || !cropField.value) {
+          showFieldError(cropField, 'error-lead-crop', 'Selecione uma cultura');
+          if (!firstInvalidField) firstInvalidField = cropField;
+          isValid = false;
+        } else {
+          clearFieldError(cropField);
+        }
+
+        // Validação Desafio
+        if (!challengeField || !challengeField.value) {
+          showFieldError(challengeField, 'error-lead-challenge', 'Selecione o desafio principal');
+          if (!firstInvalidField) firstInvalidField = challengeField;
+          isValid = false;
+        } else {
+          clearFieldError(challengeField);
+        }
+
+        if (firstInvalidField) {
+          firstInvalidField.focus();
+        }
+
+        return isValid;
+      }
+
+      // ----------------------------------------------------
+      // 8. ENVIO DO FORMULÁRIO COM FEEDBACK SUAVE
+      // ----------------------------------------------------
+      if (leadForm) {
+        leadForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          if (!validateForm()) {
+            return;
+          }
+
+          // Estado de Carregamento
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            if (submitText) submitText.textContent = 'Enviando Diagnóstico...';
+            if (submitIcon) {
+              submitIcon.textContent = 'sync';
+              submitIcon.classList.add('animate-spin');
+            }
+          }
+
+          // Captura dos dados
+          const formData = {
+            name: document.getElementById('lead-name').value.trim(),
+            phone: document.getElementById('lead-phone').value.trim(),
+            hectares: document.getElementById('lead-hectares').value.trim(),
+            location: document.getElementById('lead-location').value.trim(),
+            crop: document.getElementById('lead-crop').value,
+            challenge: document.getElementById('lead-challenge').value,
+            submittedAt: new Date().toISOString()
+          };
+
+          // Salva histórico localmente para persistência
+          try {
+            const existing = JSON.parse(localStorage.getItem('agij_vert_leads') || '[]');
+            existing.push(formData);
+            localStorage.setItem('agij_vert_leads', JSON.stringify(existing));
+          } catch (err) {
+            console.warn('Armazenamento local indisponível:', err);
+          }
+
+          // Simulação de requisição de alta conversão com animação
+          setTimeout(function () {
+            // Restaura botão
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              if (submitText) submitText.textContent = 'Solicitar Análise Técnica Gratuita';
+              if (submitIcon) {
+                submitIcon.textContent = 'send';
+                submitIcon.classList.remove('animate-spin');
+              }
+            }
+
+            // Exibe mensagem customizada de sucesso
+            if (feedbackDetail) {
+              feedbackDetail.textContent = 'Olá ' + formData.name.split(' ')[0] + '! Sua área de ' + formData.hectares + ' hectares foi registrada. Nosso agrônomo entrará em contato via WhatsApp no número ' + formData.phone + '.';
+            }
+
+            if (formFeedback) {
+              formFeedback.classList.remove('hidden');
+              formFeedback.classList.add('opacity-0', 'scale-95');
+              // Transição suave de entrada
+              requestAnimationFrame(function () {
+                formFeedback.classList.remove('opacity-0', 'scale-95');
+                formFeedback.classList.add('opacity-100', 'scale-100');
+              });
+
+              // Rola para a mensagem de sucesso se necessário
+              formFeedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            // Limpa os campos do formulário
+            leadForm.reset();
+
+            // Auto-ocultação após 8 segundos
+            if (feedbackTimeoutId) clearTimeout(feedbackTimeoutId);
+            feedbackTimeoutId = setTimeout(function () {
+              hideFeedback();
+            }, 8000);
+
+          }, 850);
+        });
+      }
+
+      function hideFeedback() {
+        if (!formFeedback || formFeedback.classList.contains('hidden')) return;
+        formFeedback.classList.add('opacity-0', 'scale-95');
+        setTimeout(function () {
+          formFeedback.classList.add('hidden');
+          formFeedback.classList.remove('opacity-0', 'scale-95');
+        }, 300);
+      }
+
+      if (feedbackCloseBtn) {
+        feedbackCloseBtn.addEventListener('click', function () {
+          if (feedbackTimeoutId) clearTimeout(feedbackTimeoutId);
+          hideFeedback();
+          const firstField = document.getElementById('lead-name');
+          if (firstField) firstField.focus();
+        });
+      }
+
+      // ----------------------------------------------------
+      // 9. WHATSAPP SEGURO (TARGET BLANK COM NOOPENER)
+      // ----------------------------------------------------
+      document.querySelectorAll('a[href*="wa.me"]').forEach(function (waLink) {
+        waLink.setAttribute('target', '_blank');
+        waLink.setAttribute('rel', 'noopener noreferrer');
+      });
+
+    });
+  </script>
+</body>
+</html>

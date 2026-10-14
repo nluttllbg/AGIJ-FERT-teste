@@ -1,0 +1,8 @@
+{
+  "name": "Remix AGIJ VERT - Consultoria Agronômica",
+  "description": "Plataforma e landing page institucional de consultoria agronômica, manejo de precisão e recuperação de solos da AGIJ VERT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
